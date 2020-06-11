@@ -1,0 +1,47 @@
+1. Create python package 'gendiff'
+
+poetry init
+mkdir gendiff
+touch gendiff/__init__.py
+
+mkdir gendiff/scripts
+touch gendiff/scripts/__init__.py
+touch gendiff/scripts/gendiff.py
+
+# add to  pyproject.toml to the section [tool.poetry]
+packages = [
+  { include = "gendiff" },
+]
+
+
+# Important! Module should define the  'main' function, and also call it when the module starts as a program - and only in this case
+
+```
+def main():
+    print("Helo world")
+
+
+if __name__ == "__main__":
+    main()
+```
+# Run gendiff.py
+poetry run python3 -m gendiff.scripts.gendiff
+
+# Add to pyproject.toml
+# This describes the scripts for calling which when the user installs the package executable files will be created.
+[tool.poetry.scripts]
+brain-games = "brain_games.scripts.brain_games:main"
+
+# Install the package
+poetry install
+
+# Test work of the package
+poetry run gendiff
+
+# Publication
+poetry build
+poetry config repositories.gendiff_repo https://test.pypi.org/legacy
+poetry publish --repository gendiff_repo
+
+# Install with pip
+pip install --user --extra-index-url https://test.pypi.org/simple/ mascai_gendiff
