@@ -6,6 +6,9 @@ Project intended to calculate differences between filese (json and yaml formats 
 [![Maintainability](https://api.codeclimate.com/v1/badges/33d5b28bb3429efa8a22/maintainability)](https://codeclimate.com/github/mascai/python-project-lvl2/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/33d5b28bb3429efa8a22/test_coverage)](https://codeclimate.com/github/mascai/python-project-lvl2/test_coverage)
 
+[![Build Status](https://travis-ci.org/mascai/python-project-lvl2.svg?branch=master)](https://travis-ci.org/mascai/python-project-lvl2)
+
+
 ### Example
 
 ```
