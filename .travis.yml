@@ -1,6 +1,6 @@
 env:
   global:
-    - CC_TEST_REPORTER_ID=a3b74c9916fd9202300ab5d4d80b1abdce9a4e9508ffd545183520a8a151efca
+    - CC_TEST_REPORTER_ID=80c82c8467064b27592cc027e12ae1b130d9f4c32f4600f59523844b27d48096
 
 language: python
 python:
@@ -16,9 +16,6 @@ before_install:
 
 install:
   - make install
-
-before_install:
-  - pip install poetry
 
 script:
   - make lint
