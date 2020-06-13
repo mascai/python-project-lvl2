@@ -1,3 +1,7 @@
+env:
+  global:
+    - CC_TEST_REPORTER_ID=a3b74c9916fd9202300ab5d4d80b1abdce9a4e9508ffd545183520a8a151efca
+
 language: python
 python:
   # we want to test our package on several versions of Python
@@ -13,5 +17,17 @@ before_install:
 install:
   - make install
 
+before_install:
+  - pip install poetry
+
 script:
   - make lint
+  - make test
+
+before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+
+after_script: 
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT

@@ -24,7 +24,7 @@ def main():
 if __name__ == "__main__":
     main()
 ```
-# Run gendiff.py
+# Test package gendiff.py
 poetry run python3 -m gendiff.scripts.gendiff
 
 # Add to pyproject.toml
@@ -40,8 +40,12 @@ poetry run gendiff
 
 # Publication
 poetry build
-poetry config repositories.gendiff_repo https://test.pypi.org/legacy
+poetry config repositories.gendiff_repo https://test.pypi.org/legacy/
 poetry publish --repository gendiff_repo
 
 # Install with pip
 pip install --user --extra-index-url https://test.pypi.org/simple/ mascai_gendiff
+
+
+# Add dependency 
+poetry add --dev flake8 
