@@ -9,3 +9,6 @@ def test_json():
         assert expected == json.loads(generate_diff(
             "./tests/fixtures/1__before.json", "./tests/fixtures/1__after.json", format.json,
         ))
+        assert expected == json.loads(generate_diff(
+            "./tests/fixtures/2__before.yaml", "./tests/fixtures/2__after.yaml", format.json,
+        ))
