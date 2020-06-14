@@ -1,4 +1,4 @@
-import gendiff.diff as diff
+from gendiff.diff import Mode
 
 
 def format_value(value):
@@ -11,17 +11,17 @@ def format_value(value):
 def make_strings(ast, parent=''):
     strings = []
     for key, (status, value) in sorted(ast.items()):
-        if status == diff.NESTED:
+        if status == Mode.NESTED:
             strings.append(
                 "{}{}".format(parent, make_strings(value, parent=(key + ".")))
             )
-        if status == diff.ADDED:
+        if status == Mode.ADDED:
             strings.append("{}{}' was added with value: '{}'".format(
                 parent, key, format_value(value))
             )
-        if status == diff.REMOVED:
+        if status == Mode.REMOVED:
             strings.append("{}{}\' was removed".format(parent, key))
-        if status == diff.CHANGED:
+        if status == Mode.CHANGED:
             old, new = value
             strings.append("{}{}' was changed. From '{}' to '{}'".format(
                 parent, key, format_value(old), format_value(new))

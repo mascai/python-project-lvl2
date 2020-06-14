@@ -4,6 +4,7 @@ from gendiff.diff import generate_diff
 
 
 def test_json():
+    """ Tests for format.json"""
     with open("./tests/fixtures/1__expected.json", "r") as f:
         expected = json.load(f)
         assert expected == json.loads(generate_diff(
