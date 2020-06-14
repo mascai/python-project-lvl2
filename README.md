@@ -41,3 +41,10 @@ $ gendiff before.json after.json
   "host": "hexlet.io"
 }
 ```
+
+### 1. Installation
+
+
+### 2. Examples of work
+Comparation of two json files
+[![asciicast](https://asciinema.org/a/JV5pLE982NGs3PpE51wAC2QrB.svg)](https://asciinema.org/a/JV5pLE982NGs3PpE51wAC2QrB)
