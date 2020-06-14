@@ -61,3 +61,6 @@ $ gendiff before.json after.json
 #### 2.4 Plain format
 [![asciicast](https://asciinema.org/a/zpNKyQJZLHws31lhrXYDSgSO5.svg)](https://asciinema.org/a/zpNKyQJZLHws31lhrXYDSgSO5)
 
+#### 2.5 Json format
+
+[![asciicast](https://asciinema.org/a/EvKnBMNi2bUK5HURGU1Rtgwfv.svg)](https://asciinema.org/a/EvKnBMNi2bUK5HURGU1Rtgwfv)
