@@ -46,5 +46,11 @@ $ gendiff before.json after.json
 
 
 ### 2. Examples of work
-Comparation of two json files
+#### 2.1 Comparation of two json files
 [![asciicast](https://asciinema.org/a/JV5pLE982NGs3PpE51wAC2QrB.svg)](https://asciinema.org/a/JV5pLE982NGs3PpE51wAC2QrB)
+
+#### 2.2 Comparation of two yaml files
+[![asciicast](https://asciinema.org/a/892gMv8CO7RTONCdPfzMnte45.svg)](https://asciinema.org/a/892gMv8CO7RTONCdPfzMnte45)
+
+#### 2.3 Comparation of nested files
+[![asciicast](https://asciinema.org/a/dAbvzoOQich4SN4vZnB3UfgJq.svg)](https://asciinema.org/a/dAbvzoOQich4SN4vZnB3UfgJq)
