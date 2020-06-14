@@ -57,3 +57,7 @@ $ gendiff before.json after.json
 
 #### 2.3 Comparation of nested files
 [![asciicast](https://asciinema.org/a/dAbvzoOQich4SN4vZnB3UfgJq.svg)](https://asciinema.org/a/dAbvzoOQich4SN4vZnB3UfgJq)
+
+#### 2.4 Plain format
+[![asciicast](https://asciinema.org/a/zpNKyQJZLHws31lhrXYDSgSO5.svg)](https://asciinema.org/a/zpNKyQJZLHws31lhrXYDSgSO5)
+
