@@ -43,6 +43,9 @@ $ gendiff before.json after.json
 ```
 
 ### 1. Installation
+``` pip install --user --extra-index-url https://test.pypi.org/simple/ mascai_gendiff ```
+
+[![asciicast](https://asciinema.org/a/BXXoYnHRqyEAKpv54OHjcoRyM.svg)](https://asciinema.org/a/BXXoYnHRqyEAKpv54OHjcoRyM)
 
 
 ### 2. Examples of work
